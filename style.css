@@ -1,0 +1,287 @@
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+}
+
+span {
+  color: #4400ffe2;
+}
+
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+}
+
+
+.btn-outline-light:hover {
+  background-color: #4400ffe2;
+  color: white;
+}
+
+
+.progress-bar {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+
+header {
+  position:fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  background: rgba(0,0,0,0); 
+  z-index: 1000; 
+  padding: 20px;
+}
+
+.navlist {
+  position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+    /* backdrop-filter: blur(10px);
+    color: #2a2a2a; */
+}
+
+.navlist.active {
+  display: flex; 
+}
+
+.bx-menu {
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgb(12, 10, 10); 
+}
+
+.navlist {
+  list-style: none; 
+  display: flex; 
+  position: fixed;
+  padding: 0; 
+  gap: 5vw;
+  margin-left: 50vw;  
+  margin-top: -10vh;
+
+}
+
+
+
+.navlist li a {
+  text-decoration: none; 
+  color: #fff; 
+  font-size: 16px;
+  transition: color 0.3s, transform 0.3s; 
+  text-align: center ;
+  display: flex;
+  
+}
+
+
+.navlist li a:hover {
+  color: #4400ffe2; 
+  transform: scale(1.1); 
+}
+
+
+.header .logo {
+  color: #000; 
+  font-size: 24px; 
+}
+.nav1{
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .navlist {
+      flex-direction: column; 
+  }
+}
+
+
+
+
+
+
+/* General styles */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form container styles */
+.contact-form-container {
+  background: #222;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p.lead {
+  max-width: 600px;
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Form input styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa;
+}
+
+input:focus, textarea:focus {
+  border-color: #4400ffe2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(68, 0, 255, 0.5);
+}
+
+textarea {
+  resize: none;
+}
+
+/* Button styles */
+.btn {
+  background-color: #4400ffe2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #3300cc;
+}
+
+/* Email button */
+.btn-outline-light {
+  border: 2px solid #4400ffe2;
+  color: #4400ffe2;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #4400ffe2;
+  color: white;
+}
+footer a{
+  color: white;
+  border-bottom: 3px solid var(--main-color);
+  transition: 0.3s ease in out;
+  text-decoration: none;
+  width: 50 ;
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+
+}
+.footer a:hover{
+  border-bottom: 3px solid var(white);
+  color: #4400ffe2; 
+  transform: scale(1.1); 
+  
+}
+.socialmedia{
+  margin-right: 120px;
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4400ffe2;
+ 
+}
+.socialmedia a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  padding: 10px;
+  background: transparent;
+  border: 50%;
+  color: #4400ffe2;
+  margin: 3rem 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+.socialmedia a:hover{
+  color: white;
+  background-color:#4400ffe2;
+  transform: scale(1.2)translateY(-5px);
+  box-shadow: 0 0 25px #4400ffe2;
+}
+.footer{
+  height: 50vh;
+  background-color: #000;
+}
+@media (min-width: 768px) {
+  .navlist {
+      display: flex; 
+      flex-direction: row;
+      position: static; 
+      background: none;
+      width: auto;
+  }
+  .bx-menu {
+      display: none; 
+  }
+}
+
+.copyright{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: medium;
+  color: #ddd;
+
+}
